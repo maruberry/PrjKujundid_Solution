@@ -10,10 +10,10 @@ Public Class Kolmnurk
         Me.korgus = Sqrt(haar * haar - (alus * alus / 4))
     End Sub
     Public Overrides Function leiaYmberMoot() As Double
-        Return kylgA * korgus / 2
+        Return kylgA + kylgB + kylgC
     End Function
 
     Public Overrides Function leiaPindala() As Double
-        Return kylgA + kylgB + kylgC
+        Return kylgA * korgus / 2
     End Function
 End Class
