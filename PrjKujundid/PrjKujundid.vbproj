@@ -73,17 +73,20 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="formKujundid.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="formKujundid.Designer.vb">
+      <DependentUpon>formKujundid.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Kolmnurk.vb" />
+    <Compile Include="Kujund.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -95,8 +98,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Nelinurk.vb" />
+    <Compile Include="Ristkylik.vb" />
+    <Compile Include="Ruut.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="formKujundid.resx">
+      <DependentUpon>formKujundid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
